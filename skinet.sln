@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{981C82DA-5D0A-42D6-8938-369CB6A29DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infastructure", "Infrastructure\Infastructure.csproj", "{FDDC8CBE-E4EC-424A-A07F-BDFD58939327}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{FDDC8CBE-E4EC-424A-A07F-BDFD58939327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
