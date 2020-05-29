@@ -11,6 +11,8 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
+import { BasketSummaryComponent } from './basket-summary/basket-summary.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
     HttpClientModule,
     CoreModule,
     HomeModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    SharedModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
