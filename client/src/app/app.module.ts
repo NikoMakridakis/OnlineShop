@@ -13,10 +13,12 @@ import { LoadingInterceptor } from './core/interceptors/loading.interceptors';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { BasketSummaryComponent } from './basket-summary/basket-summary.component';
 import { SharedModule } from './shared/shared.module';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
