@@ -6,7 +6,6 @@ using Core.Entities.OrderAggregate;
 using Core.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Stripe;
-using Product = Core.Entities.Product;
 
 namespace Infrastructure.Services
 {
@@ -37,7 +36,7 @@ namespace Infrastructure.Services
 
             foreach (var item in basket.Items)
             {
-                var productItem = await _unitOfWork.Repository<Product>().GetByIdAsync(item.Id);
+                var productItem = await _unitOfWork.Repository<Core.Entities.Product>().GetByIdAsync(item.Id);
                 if (item.Price != productItem.Price)
                 {
                     item.Price = productItem.Price;
