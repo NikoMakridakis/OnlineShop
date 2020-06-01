@@ -84,7 +84,7 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
           this.router.navigate(['checkout/success'], navigationExtras);
         }
         else {
-          this.toastr.error('Payment error');
+          this.toastr.error(result.error.message);
         }
       });
       console.log(order);
