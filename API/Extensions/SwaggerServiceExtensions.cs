@@ -10,7 +10,7 @@ namespace API.Extensions
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "SkiNet API", Version ="v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "OnlineShop API", Version ="v1"});
             
                 var securitySchema = new OpenApiSecurityScheme
                 {
@@ -39,7 +39,7 @@ namespace API.Extensions
         public static IApplicationBuilder UseSwaggerDocumentation(this IApplicationBuilder app)
         {
             app.UseSwagger();
-            app.UseSwaggerUI(c => {c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkiNet API v1"); });
+            app.UseSwaggerUI(c => {c.SwaggerEndpoint("/swagger/v1/swagger.json", "OnlineShop API v1"); });
         
             return app;
         }
