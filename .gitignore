@@ -4,3 +4,4 @@ appsettings.json
 *.db
 wwwroot
 publish
+settings.json
